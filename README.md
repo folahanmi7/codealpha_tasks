@@ -11,7 +11,7 @@ This project captures live network traffic from your local machine and displays:
 - **Destination IP address**
 - **Transport protocol** (TCP / UDP / Other)
 
-##  Objectives
+## Objectives
 
 - Understand what a **network sniffer** is  
 - Learn how packets are captured  
