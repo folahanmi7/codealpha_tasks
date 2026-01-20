@@ -4,36 +4,11 @@
 This repository contains **two beginner-to-intermediate cybersecurity projects** implemented in Python.  
 The projects focus on **network traffic analysis** and **secure coding practices**, demonstrating both offensive awareness and defensive programming techniques.
 
----
-
-## 📁 Project Structure
-
-```
-project-root/
-│
-├── network-sniffer/
-│   ├── sniffer.py
-│   └── README.md
-│
-├── secure-coding-review/
-│   ├── app.py
-│   ├── fixedapp.py
-│   └── README.md
-│
-└── README.md
-```
-
----
-
 # 🔹 Project 1: Basic Network Sniffer in Python
 
 ## Overview
 A beginner-friendly project that demonstrates how to build a **simple network packet sniffer** using Python and **Scapy**.  
 It helps in understanding how network traffic flows and how packets can be inspected in real time.
-
-This project is strictly for **educational and academic purposes**.
-
----
 
 ## Objectives
 - Understand what a **network sniffer** is
@@ -41,8 +16,6 @@ This project is strictly for **educational and academic purposes**.
 - Extract **source and destination IP addresses**
 - Identify **transport layer protocols** (TCP / UDP / Others)
 - Practice Python using **Scapy**
-
----
 
 ## Features
 - Captures live packets from the network interface
@@ -52,36 +25,21 @@ This project is strictly for **educational and academic purposes**.
   - Protocol type (TCP / UDP)
 - Beginner-friendly and well-structured logic
 
----
-
 ## Tools & Technologies
 | Item | Description |
 |-----|------------|
 | Language | Python 3 |
 | Library | Scapy |
-| OS | Windows (Administrator privileges required) |
+| OS | Windows|
 
----
 
 ## Requirements
 Install Scapy before running the sniffer:
-```bash
-pip install scapy
-```
-
-Run the program with administrator privileges:
-```bash
-python sniffer.py
-```
-
----
 
 ## Learning Outcome
 - Practical exposure to packet-level networking
 - Understanding of IP and transport-layer protocols
 - Introduction to network traffic analysis
-
----
 
 # 🔹 Project 2: Secure Coding Review Using Bandit
 
@@ -91,16 +49,12 @@ The aim is to identify insecure coding practices, document vulnerabilities, and 
 
 The project follows a **before-and-after** security review approach.
 
----
-
 ## Objectives
 - Perform static security analysis on Python code
 - Identify common vulnerabilities
 - Understand security risks in application code
 - Apply secure coding best practices
 - Validate fixes using Bandit
-
----
 
 ## Tools & Technologies
 | Item | Description |
@@ -109,8 +63,6 @@ The project follows a **before-and-after** security review approach.
 | Security Tool | Bandit |
 | IDE | Visual Studio Code |
 | OS | Windows |
-
----
 
 ## Vulnerability Identified
 - **Type:** SQL Injection  
@@ -124,8 +76,6 @@ query = "SELECT * FROM users WHERE username = '" + username + "' AND password = 
 cursor.execute(query)
 ```
 
----
-
 ## Remediation Applied
 - Replaced string-based SQL queries with **parameterized queries**
 - Prevented direct user input injection
@@ -135,7 +85,6 @@ cursor.execute(query)
 query = "SELECT * FROM users WHERE username = ? AND password = ?"
 cursor.execute(query, (username, password))
 ```
-
 
 ## Bandit Scan Results
 
@@ -157,9 +106,3 @@ This confirms successful remediation of the vulnerability.
 These projects collectively demonstrate core cybersecurity skills:
 - **Network-level visibility** through packet sniffing
 - **Application-level security** through static code analysis
-
-Together, they provide a strong foundation in understanding both **how attacks happen** and **how to defend against them** using secure coding practices.
-
-## Author
-**S.F**  
-Python Cybersecurity Projects
